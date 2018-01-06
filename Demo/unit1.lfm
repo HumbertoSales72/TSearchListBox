@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 518
+  Height = 467
+  Top = 163
+  Width = 702
+  Caption = 'Form1'
+  ClientHeight = 467
+  ClientWidth = 702
+  LCLVersion = '1.8.0.6'
+  object Button1: TButton
+    Left = 344
+    Height = 25
+    Top = 368
+    Width = 170
+    Caption = 'Adicionar itens'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object CheckBox1: TCheckBox
+    Left = 352
+    Height = 21
+    Top = 400
+    Width = 70
+    Caption = 'Indexar'
+    OnChange = CheckBox1Change
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 32
+    Height = 307
+    Top = 8
+    Width = 360
+    Caption = 'Panel1'
+    ClientHeight = 307
+    ClientWidth = 360
+    TabOrder = 2
+    object ListBox1: TListBox
+      Left = 54
+      Height = 249
+      Top = 26
+      Width = 243
+      ItemHeight = 0
+      ScrollWidth = 241
+      TabOrder = 0
+      TopIndex = -1
+    end
+  end
+  object ListBox2: TListBox
+    Left = 425
+    Height = 294
+    Top = 18
+    Width = 250
+    ItemHeight = 0
+    ScrollWidth = 248
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object SearchListBox1: TSearchListBox
+    ListBox = ListBox1
+    Posicao_Botao = poBottomLeft
+    left = 72
+    top = 72
+  end
+  object SearchListBox2: TSearchListBox
+    ListBox = ListBox2
+    Posicao_Botao = poBottomLeft
+    left = 463
+    top = 85
+  end
+end
